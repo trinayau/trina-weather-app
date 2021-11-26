@@ -33,26 +33,12 @@ h1 {
   left: -3px;
 }
 
-h6 {
-  font-size: 14px;
-  opacity: 0.8;
-}
-h2,
-h3,
-h4 {
-  color: white;
-  margin-bottom: 0;
-}
 h2 {
-  font-size: 50px;
-}
-h3 {
-  font-size: 20px;
-  font-weight: 100;
-}
-h4 {
-  font-size: 14px;
-  opacity: 0.8;
+  font-size: 12px;
+  position: relative;
+  top: -380px;
+  font-family: monospace;
+  text-align: center;
 }
 
 .container {
@@ -184,4 +170,12 @@ h4 {
   color: white;
   opacity: 0.8;
   text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: monospace;
+  font-size: 10px;
+  position: relative;
+  top: -110px;
 }
