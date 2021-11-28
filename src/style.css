@@ -207,6 +207,7 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 100%;
+  text-shadow: 0px 0px #00000000;
 }
 
 .temp-circle-noon,
