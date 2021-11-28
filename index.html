@@ -5,166 +5,204 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trina's Weather App</title>
-    <script src="https://kit.fontawesome.com/592efcffa0.js" crossorigin="anonymous"></script>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/style.css" class="css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
+    <script
+      src="https://kit.fontawesome.com/592efcffa0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" class="css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container shadow">
-         <img src="images/top-blossom.svg" alt="pink cherry blossoms" class="top-blossom">
-                 <img src="images/bottom-blossom.svg" alt="pink cherry blossoms" class="bottom-blossom">
-                 <img src="images/bottom-side-blossom.svg" alt="smaller pink flowers" class="bottom-side">
-                 <img src="images/tiny-top-blossom.svg" alt="small pink flower" class="tiny-flower-1">
-                 <img src="images/tiny-blossom-2.svg" alt="another small pink flower" class="tiny-flower-2">
-                 <img src="images/tiny-blossom-3.svg" alt="another small pink flower" class="tiny-flower-3">
-                   <img src="images/tiny-blossom-2.svg" alt="another small pink flower" class="tiny-flower-4">
-        <div class="app-wrapper">
-            <div class="weather app">
-                <ul class="cities">
-                    <li>London</li>
-                    <li>Paris</li>
-                    <li>Tokyo</li>
-                </ul>
-        <form id="search-city-form">
-        <input
-          type="search"
-          id="input-city"
-          placeholder="Tell me your city"
-          class="shadow-sm"
-          autocomplete="off"
-        />
-        <input
-          type="submit"
-          id="submit-city"
-          value="Search"
-          class="shadow-sm"
-        />
-      </form>
-      <h1 class="h1-shadow"> London </h1>
-     
-      <h2>Friday 15:56</h2>
-      <div class="circle-wrapper">
-        <div class="row">
-          <div class="col-12">
-             <div class="today-wrapper">
-                <div class="temp-circle-today"></div>
-                <div class="row">
+      <img
+        src="images/top-blossom.svg"
+        alt="pink cherry blossoms"
+        class="top-blossom"
+      />
+      <img
+        src="images/bottom-blossom.svg"
+        alt="pink cherry blossoms"
+        class="bottom-blossom"
+      />
+      <img
+        src="images/bottom-side-blossom.svg"
+        alt="smaller pink flowers"
+        class="bottom-side"
+      />
+      <img
+        src="images/tiny-top-blossom.svg"
+        alt="small pink flower"
+        class="tiny-flower-1"
+      />
+      <img
+        src="images/tiny-blossom-2.svg"
+        alt="another small pink flower"
+        class="tiny-flower-2"
+      />
+      <img
+        src="images/tiny-blossom-3.svg"
+        alt="another small pink flower"
+        class="tiny-flower-3"
+      />
+      <img
+        src="images/tiny-blossom-2.svg"
+        alt="another small pink flower"
+        class="tiny-flower-4"
+      />
+      <div class="app-wrapper">
+        <div class="weather app">
+          <ul class="cities">
+            <li>London</li>
+            <li>Paris</li>
+            <li>Tokyo</li>
+          </ul>
+          <form id="search-city-form">
+            <input
+              type="search"
+              id="input-city"
+              placeholder="Tell me your city"
+              class="shadow-sm"
+              autocomplete="off"
+            />
+            <input
+              type="submit"
+              id="submit-city"
+              value="Search"
+              class="shadow-sm"
+            />
+          </form>
+          <h1 class="h1-shadow">London</h1>
+
+          <h2>Friday 15:56</h2>
+          <div class="circle-wrapper">
+            <div class="row">
+              <div class="col-12">
+                <div class="today-wrapper">
+                  <div class="temp-circle-today"></div>
+                  <div class="row">
+                    <div class="col-12">
+                      <i class="fas fa-smog icon-today"></i>
+                    </div>
+                    <div class="col-12">
+                      <h3 class="temp-celsius-today">8°C</h3>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="today-condition">Cloudy</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="noon-wrapper">
+                  <div class="temp-circle-noon"></div>
+                  <div class="row" id="text-wrapper-noon">
+                    <div class="col-12">
+                      <p>
+                        12:00
+                      </p>
+                    </div>
                   <div class="col-12">
-                <i class="fas fa-smog icon-today"></i>
-                </div>
+                    <p>
+                      <i class="fas fa-cloud-rain"></i>
+                    </p>
+                  </div>
                   <div class="col-12">
-                <h3 class="temp-celsius-today">8°C</h3>
+                    <p>
+                      5°C
+                    </p>
+                  </div>
                 </div>
-                 <div class="col-12">
-                <h4 class="today-condition">Cloudy</h4>
+              </div>
+            </div>
+          <div class="col-3">
+            <div class="three-pm-wrapper">
+              <div class="temp-circle-15"></div>
+              <div class="row" id="text-wrapper-3pm">
+                <div class="col-12">
+                  <p>
+                    15:00
+                  </p>
                 </div>
+              <div class="col-12">
+                <p>
+                  <i class="far fa-snowflake"></i>
+                </p>
+              </div>
+              <div class="col-12">
+                <p>
+                  4°C
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="col-3">
+              <div class="evening-wrapper">
+                <div class="temp-circle-18"></div>
+                <div class="row" id="text-wrapper-evening">
+                  <div class="col-12">
+                    <p>
+                      18:00
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <p>
+                      <i class="fas fa-cloud-meatball"></i>
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <p>
+                      3°C
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-3">
-              <div class="noon-wrapper">
-                <div class="temp-circle-noon"></div>
-                 <div class="row" id="text-wrapper-noon">
-            <div class="col-12">
-            <div class="15-time">
-              12:00
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="noon-icon">
-              <i class="fas fa-cloud-rain"></i>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="noon-temp">
-              5°C
-            </div>
-          </div>
-        </div>
+              <div class="night-wrapper">
+                <div class="temp-circle-21"></div>
+                <div class="row" id="text-wrapper-night">
+                  <div class="col-12">
+                    <p>
+                      21:00
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <p>
+                      <i class="fas fa-cloud-moon-rain"></i>
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <p>
+                      -2°C
+                    </p>
+                  </div>
+                </div>
               </div>
-      </div>
-      <div class="col-3">
-        <div class="three-pm-wrapper">
-        <div class="temp-circle-15"></div>
-        <div class="row" id="text-wrapper-3pm">
-            <div class="col-12">
-            <div class="15-time">
-              15:00
             </div>
-          </div>
-          <div class="col-12">
-            <div class="15-icon">
-    <i class="far fa-snowflake"></i>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="15-temp">
-              4°C
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-     <div class="col-3">
-       <div class="evening-wrapper">
-       <div class="temp-circle-18"></div>
-        <div class="row" id="text-wrapper-evening">
-            <div class="col-12">
-            <div class="evening-time">
-              18:00
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="evening-icon">
-<i class="fas fa-cloud-meatball"></i>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="evening-temp">
-              3°C
-            </div>
-          </div>
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="night-wrapper">
-       <div class="temp-circle-21"></div>
-        <div class="row" id="text-wrapper-night">
-            <div class="col-12">
-            <div class="night-time">
-              21:00
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="night-icon">
-              <i class="fas fa-cloud-moon-rain"></i>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="night-temp">
-              -2°C
-            </div>
-          </div>
-        </div>
-        </div>
-       </div>
-      </div>
+      <footer>
+        <p>
+          <a href="https://github.com/trinayau/trina-weather-app" class="href"
+            >Open Source Code</a
+          >
+          by Trina Yau
+        </p>
+      </footer>
     </div>
-
-      
-        </div>
-        <footer>
-           <p>
-           <a href="https://github.com/trinayau/trina-weather-app" class="href">Open Source Code</a> by Trina Yau
-           </p>
-       </footer>
-    </div>
-      
   </body>
 </html>
