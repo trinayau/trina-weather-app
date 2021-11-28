@@ -163,7 +163,7 @@ h4 {
   border-radius: 5px;
   color: white;
   transition: all 300ms ease;
-  font-family: monospace;
+  font-family: monospace, sans-serif;
   font-size: 16px;
 }
 
@@ -247,6 +247,10 @@ h4 {
 .evening-wrapper:hover,
 .night-wrapper:hover {
   animation: bounce 1.5s ease-in-out infinite;
+  -webkit-animation: bounce 1.5s ease-in-out infinite;
+  -moz-animation: bounce 1.5s ease-in-out infinite;
+  -ms-animation: bounce 1.5s ease-in-out infinite;
+  -o-animation: bounce 1.5s ease-in-out infinite;
 }
 .temp-circle-noon:hover,
 .temp-circle-15:hover,
@@ -281,6 +285,51 @@ h4 {
   }
   80% {
     transform: translateY(-20px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+  80% {
+    -moz-transform: translateY(-20px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  80% {
+    -webkit-transform: translateY(-20px);
+  }
+}
+
+@-ms-keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -ms-transform: translateY(0);
+  }
+  40% {
+    -ms-transform: translateY(-30px);
+  }
+  80% {
+    -ms-transform: translateY(-20px);
   }
 }
 
