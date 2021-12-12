@@ -1,6 +1,6 @@
 /* Add real time date to app*/
 let currentTime = new Date();
-let dateTimeSelector = document.getElementById("dateTime");
+let dateTimeSelector = document.getElementById("currentDateTime");
 
 function formatDate(date) {
   let days = [
