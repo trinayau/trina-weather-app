@@ -348,9 +348,15 @@ footer {
   margin: 0 auto;
 }
 
-footer a {
+.link {
   outline: none;
   text-decoration: none;
   color: #827e47;
   transition: ease-in 200ms all;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.link:hover {
+  color: #ff9e93;
 }
