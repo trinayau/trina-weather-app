@@ -117,18 +117,24 @@ p {
 
 .cities li {
   font-family: monospace;
+  font-weight: 200;
   display: inline;
   margin: 0px 5px;
   font-size: 14px;
   position: relative;
   top: -251px;
-  left: 43px;
+  left: 42px;
   color: #827c47;
-  transition: all 200ms ease;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .cities li:hover {
   color: #d88787;
+}
+
+.cities li:active {
+  color: #827c47;
 }
 
 #input-city {
