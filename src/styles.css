@@ -185,7 +185,7 @@ p {
   display: block;
   font-family: "Arial";
   position: relative;
-  top: -475px;
+  top: -500px;
   text-align: center;
   pointer-events: none;
 }
@@ -217,7 +217,7 @@ p {
   text-align: center;
   margin: 0px auto;
   position: relative;
-  top: -400px;
+  top: -420px;
   line-height: 90px;
   transition: ease-in-out 300ms all;
 }
@@ -302,25 +302,28 @@ p {
 
 @keyframes bigger {
   0% {
-    padding: 10px;
+    padding: 7px;
   }
   50% {
     padding: 0px;
   }
   100% {
-    padding: 10px;
+    padding: 7px;
   }
 }
 
 .today-condition {
   position: relative;
-  top: -432px;
+  top: -460px;
+  font-size: 11px;
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .temp-celsius-today {
   font-size: 28px;
   position: relative;
-  top: -425px;
+  top: -455px;
   text-align: center;
   color: #ffefee;
   font-family: "Open Sans", sans-serif;
@@ -329,10 +332,9 @@ p {
 
 .icon-today {
   position: relative;
-  top: -425px;
-  text-align: center;
-  display: block;
+  top: -450px;
   color: #fff5f4;
+  width: 15%;
 }
 
 footer {

@@ -57,9 +57,15 @@ function showCity(response) {
   let tempToday = document.getElementById("tempToday");
   let checkTempToday = Math.round(response.data.main.temp);
   tempToday.innerHTML = `${checkTempToday}°C`;
-  let checkConditionToday = response.data.weather[0].main;
+  let checkConditionToday = response.data.weather[0].description;
   let todayCondition = document.getElementById("todayCondition");
   todayCondition.innerHTML = `${checkConditionToday}`;
+  let iconToday = document.getElementById("iconToday");
+  /* Changes icons according to weather */
+  iconToday.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function findCity(city) {
@@ -90,9 +96,15 @@ function showCurrentWeather(response) {
   let todayCondition = document.getElementById("todayCondition");
   let currentCity = response.data.name;
   let cityHeader = document.getElementById("currentCity");
+  let iconToday = document.getElementById("iconToday");
   tempToday.innerHTML = `${checkTempToday}°C`;
   todayCondition.innerHTML = `${checkConditionToday}`;
   cityHeader.innerHTML = `${currentCity}`;
+  /* Changes icons according to weather */
+  iconToday.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function retrievePosition(position) {
@@ -111,4 +123,5 @@ function getLocation() {
 let checkLocation = document.getElementById("currentLocation");
 checkLocation.addEventListener("click", getLocation);
 
+/* Shows the user London as default*/
 findCity("London");
