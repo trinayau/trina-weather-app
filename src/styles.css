@@ -195,19 +195,19 @@ p {
 .temp-circle-21 {
   background: rgba(255, 238, 233, 1);
   background: -webkit-linear-gradient(
-    bottom,
+    top,
     rgba(255, 238, 233, 1),
     rgba(251, 221, 215, 0.8)
   );
   background: -moz-linear-gradient(
-    bottom,
+    top,
     rgba(255, 238, 233, 1),
     rgba(251, 221, 215, 0.8)
   );
   background: linear-gradient(
-    to top,
-    rgba(255, 238, 233, 0.4),
-    rgba(251, 221, 215, 0.4)
+    to bottom,
+    rgba(255, 238, 233, 1),
+    rgba(251, 221, 215, 0.8)
   );
   border-radius: 30px;
   border: none;
@@ -221,7 +221,7 @@ p {
   line-height: 90px;
   transition: ease-in-out 300ms all;
 }
-
+/*
 .noon-wrapper:hover,
 .three-pm-wrapper:hover,
 .evening-wrapper:hover,
@@ -232,6 +232,7 @@ p {
   -ms-animation: bounce 1.5s ease-in-out infinite;
   -o-animation: bounce 1.5s ease-in-out infinite;
 }
+*/
 .temp-circle-noon:hover,
 .temp-circle-15:hover,
 .temp-circle-18:hover,
@@ -287,13 +288,14 @@ p {
   );
   border-radius: 50%;
   border: none;
-  height: 125px;
-  width: 125px;
+  height: 140px;
+  width: 140px;
   position: relative;
   top: -335px;
   display: block;
   text-align: center;
   margin: 0px auto;
+  margin-top: 10px;
   background-clip: content-box;
   padding: 10px;
   border: 1px solid rgba(256, 256, 256, 0.9);
