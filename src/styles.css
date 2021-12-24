@@ -290,8 +290,8 @@ p {
   );
   border-radius: 50%;
   border: none;
-  height: 140px;
-  width: 140px;
+  height: 150px;
+  width: 150px;
   position: relative;
   top: -335px;
   display: block;
@@ -318,7 +318,7 @@ p {
 
 .today-condition {
   position: relative;
-  top: -460px;
+  top: -470px;
   font-size: 11px;
   margin: 0;
   text-transform: capitalize;
@@ -327,7 +327,7 @@ p {
 .temp-celsius-today {
   font-size: 28px;
   position: relative;
-  top: -455px;
+  top: -468px;
   text-align: center;
   color: #ffefee;
   font-family: "Open Sans", sans-serif;
@@ -336,7 +336,7 @@ p {
 
 .icon-today {
   position: relative;
-  top: -450px;
+  top: -460px;
   color: #fff5f4;
   width: 15%;
 }
@@ -346,7 +346,7 @@ footer {
   font-family: monospace;
   font-size: 10px;
   position: relative;
-  top: -435px;
+  top: -465px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   width: 250px;
