@@ -53,7 +53,7 @@ p {
   background: -webkit-linear-gradient(top, #fbddd7, #fad2cb);
   background: -moz-linear-gradient(top, #fbddd7, #fad2cb);
   background: linear-gradient(to bottom, #fbddd7, #fad2cb);
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .top-blossom {
