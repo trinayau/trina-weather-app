@@ -1,3 +1,8 @@
+/*Global variable */
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+let celsiusLink = document.querySelector("#celsius-link");
+let celsiusTemp = null;
+
 /* Feature 1*/
 let currentTime = new Date();
 let dateTimeSelector = document.getElementById("dateTime");
@@ -49,18 +54,22 @@ function formatDate(date) {
 
 dateTimeSelector.innerHTML = formatDate(currentTime);
 
-/* Feature 2 + 3*/
+/* Feature to search city and show temp and weather condition*/
 
 function showCity(response) {
   let cityHeader = document.getElementById("currentCity");
+  celsiusTemp = response.data.main.temp;
   cityHeader.innerHTML = `${response.data.name}`;
   let tempToday = document.getElementById("tempToday");
   let checkTempToday = Math.round(response.data.main.temp);
-  tempToday.innerHTML = `${checkTempToday}°C`;
+  tempToday.innerHTML = `${checkTempToday}`;
   let checkConditionToday = response.data.weather[0].description;
   let todayCondition = document.getElementById("todayCondition");
   todayCondition.innerHTML = `${checkConditionToday}`;
   let iconToday = document.getElementById("iconToday");
+  let windElement = document.getElementById("windElement");
+  let windSpeed = Math.round(response.data.wind.speed);
+  windElement.innerHTML = `Wind: ${windSpeed} km/h`;
   /* Changes icons according to weather */
   iconToday.setAttribute(
     "src",
@@ -87,17 +96,21 @@ function preventRefresh(event) {
 let form = document.getElementById("search-city-form");
 form.addEventListener("submit", preventRefresh);
 
-/* Bonus Feature to get current location and show temp*/
+/* Feature to get current location and show temp*/
 
 function showCurrentWeather(response) {
-  let checkTempToday = Math.round(response.data.main.temp);
+  celsiusTemp = response.data.main.temp;
+  console.log(celsiusTemp);
+  let temperature = Math.round(celsiusTemp);
   let tempToday = document.getElementById("tempToday");
   let checkConditionToday = response.data.weather[0].main;
   let todayCondition = document.getElementById("todayCondition");
   let currentCity = response.data.name;
   let cityHeader = document.getElementById("currentCity");
   let iconToday = document.getElementById("iconToday");
-  tempToday.innerHTML = `${checkTempToday}°C`;
+  let windSpeed = Math.round(response.data.wind.speed);
+  windElement.innerHTML = `Wind: ${windSpeed} km/h`;
+  tempToday.innerHTML = `${temperature}`;
   todayCondition.innerHTML = `${checkConditionToday}`;
   cityHeader.innerHTML = `${currentCity}`;
   /* Changes icons according to weather */
@@ -125,3 +138,24 @@ checkLocation.addEventListener("click", getLocation);
 
 /* Shows the user London as default*/
 findCity("London");
+
+/*Convert temperature to farenheit or celsius, default celsius */
+
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.getElementById("tempToday");
+  console.log(celsiusTemp);
+  let fahrenheitTemperature = (celsiusTemp * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  fahrenheitLink.disabled = true;
+}
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#tempToday");
+  let temp = temperatureElement.innerHTML;
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
+}
+
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
+celsiusLink.addEventListener("click", convertToCelsius);

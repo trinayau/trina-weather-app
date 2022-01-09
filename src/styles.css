@@ -53,7 +53,7 @@ p {
   background: -webkit-linear-gradient(top, #fbddd7, #fad2cb);
   background: -moz-linear-gradient(top, #fbddd7, #fad2cb);
   background: linear-gradient(to bottom, #fbddd7, #fad2cb);
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .top-blossom {
@@ -332,6 +332,37 @@ p {
   color: #ffefee;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+}
+
+.celsius-fahrenheit {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 685px;
+  left: 180px;
+  color: #ffefee;
+  font-family: "Open Sans", sans-serif;
+}
+
+.celsius-fahrenheit a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all ease-in-out 0.2s;
+}
+
+.celsius-fahrenheit a:hover {
+  color: #827e47;
+  font-weight: bold;
+}
+
+.wind {
+  position: relative;
+  bottom: 653px;
+  left: 132px;
+  color: #ffefee;
+  font-family: monospace;
+  font-size: 10px;
 }
 
 .icon-today {
