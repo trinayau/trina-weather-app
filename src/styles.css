@@ -53,7 +53,7 @@ p {
   background: -webkit-linear-gradient(top, #fbddd7, #fad2cb);
   background: -moz-linear-gradient(top, #fbddd7, #fad2cb);
   background: linear-gradient(to bottom, #fbddd7, #fad2cb);
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .top-blossom {
@@ -332,15 +332,16 @@ p {
   color: #ffefee;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+  margin: 0;
 }
 
 .celsius-fahrenheit {
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   position: relative;
-  bottom: 685px;
-  left: 180px;
+  bottom: 505px;
+  left: 170px;
   color: #ffefee;
   font-family: "Open Sans", sans-serif;
 }
@@ -358,7 +359,7 @@ p {
 
 .wind {
   position: relative;
-  bottom: 653px;
+  bottom: 665px;
   left: 132px;
   color: #ffefee;
   font-family: monospace;
