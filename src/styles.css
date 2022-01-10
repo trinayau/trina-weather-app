@@ -53,7 +53,7 @@ p {
   background: -webkit-linear-gradient(top, #fbddd7, #fad2cb);
   background: -moz-linear-gradient(top, #fbddd7, #fad2cb);
   background: linear-gradient(to bottom, #fbddd7, #fad2cb);
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .top-blossom {
@@ -187,9 +187,11 @@ p {
   display: block;
   font-family: "Arial";
   position: relative;
-  top: -500px;
+  top: -520px;
+  left: 4px;
   text-align: center;
   pointer-events: none;
+  opacity: 0.9;
 }
 .temp-circle-noon,
 .temp-circle-15,
@@ -214,12 +216,12 @@ p {
   border-radius: 30px;
   border: none;
   height: 90px;
-  width: 55px;
+  width: 70px;
   display: block;
   text-align: center;
   margin: 0px auto;
   position: relative;
-  top: -420px;
+  top: -440px;
   line-height: 90px;
   transition: ease-in-out 300ms all;
 }
@@ -256,6 +258,7 @@ p {
     rgba(251, 221, 215, 0.8)
   );
 }
+/*
 @keyframes bounce {
   0%,
   20%,
@@ -270,6 +273,7 @@ p {
     transform: translateY(-20px);
   }
 }
+*/
 
 .temp-circle-today {
   background: rgba(255, 39, 62, 0.4);
@@ -368,7 +372,7 @@ p {
 
 .icon-today {
   position: relative;
-  top: -460px;
+  top: -465px;
   color: #fff5f4;
   width: 15%;
 }
@@ -378,7 +382,7 @@ footer {
   font-family: monospace;
   font-size: 10px;
   position: relative;
-  top: -505px;
+  top: -495px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   width: 250px;
