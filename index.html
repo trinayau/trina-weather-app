@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
    
@@ -87,12 +87,11 @@
             />
           </form>
           <h1 class="h1-shadow" id="currentCity">London</h1>
-
           <h2 id="dateTime">Friday 15:56</h2>
           <div class="circle-wrapper">
             <div class="row">
               <div class="col-12">
-                <div class="today-wrappuer">
+                <div class="today-wrapper">
                   <div class="temp-circle-today shadow-sm"></div>
                   <div class="row">
                     <div class="col-12 text-center"> 
@@ -101,17 +100,21 @@
                     <div class="col-11">
                       <h3 class="temp-celsius-today" id="tempToday">8°C</h3> 
                     </div>
-               
                      <div class="celsius-fahrenheit">
-      <a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link" >°F</a>
-      </div>
-  
+                       <a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link" >°F</a>
+                      </div>
                     <div class="col-12">
                       <h4 class="today-condition" id="todayCondition">Cloudy</h4>
                     </div>
+                        <div class="humidity col-12" id="humidityElement"></div>
+                        <div class="wind col-12" id="windElement"></div>
+ >
                   </div>
                 </div>
               </div>
+          
+
+              <!-- 
               <div class="col-3">
                 <div class="noon-wrapper">
                   <div class="temp-circle-noon shadow-sm"></div>
@@ -201,9 +204,11 @@
               </div>
             </div>
           </div>
+            -->
         </div>
       </div>
-         <div class="wind" id="windElement"></div>
+        <div class="weather-forecast" id="forecast"></div>
+     
      
       <footer>
         <p>
